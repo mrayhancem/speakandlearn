@@ -1,0 +1,21 @@
+server:
+  address: 
+  port: 8080
+
+spring:
+  datasource:
+     url: jdbc:postgresql://localhost:5432/personal_practice
+     username: postgres
+     password: 1944
+     driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      '[hibernate.format_sql]': true
+      
+    
+      
